@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.style.histogram.HistogramView
+            android:id="@+id/hv1"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:background="@drawable/asset_column_bg" />
+
+        <com.style.histogram.HistogramView
+            android:id="@+id/hv2"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:background="#ee8833" />
+
+        <com.style.histogram.HistogramView
+            android:id="@+id/hv3"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/asset_column_bg" />
+
+        <com.style.histogram.HistogramView
+            android:id="@+id/hv4"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:background="#ee8833" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <com.style.histogram.HistogramView
+            android:id="@+id/hv5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ee8833" />
+
+        <com.style.histogram.HistogramView
+            android:id="@+id/hv6"
+        	android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ee8833" />
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+        <RelativeLayout android:layout_width="50dp"
+	        android:layout_height="100dp"       
+	        android:background="@drawable/asset_column_bg">
+	        <View android:layout_width="50dp"
+	            android:layout_height="0dp"
+	            android:background="@drawable/dq_column"
+	            android:layout_alignParentBottom="true"
+	            android:id="@+id/v1"/>
+	    </RelativeLayout>
+	    
+	    <FrameLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+        	android:layout_marginTop="20dp"
+	        android:background="#ee8833">
+	        <View android:layout_width="0dp"
+	            android:layout_height="50dp"
+	            android:background="#123456"
+	            android:id="@+id/v2"/>
+	    </FrameLayout>
+   </LinearLayout>
+</LinearLayout>
